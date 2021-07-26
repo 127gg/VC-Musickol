@@ -38,7 +38,7 @@ Klik tombol dibawah untuk deploy VC MusicINDO`
 
 ### Command yang tersedia 🚀
 
-- `/play <nama lagu> - putar lagu yang Anda minta`
+- `/p <nama lagu> - putar lagu yang Anda minta`
 
 - `/play <balas ke audio> - putar file balasan`
 
@@ -62,13 +62,13 @@ Klik tombol dibawah untuk deploy VC MusicINDO`
 
 ### Khusus admin saja 🛰
 
-- `/player - buka panel pengaturan pemutar musik`
+- `/p - buka panel pengaturan pemutar musik`
 
 - `/pause - jeda pemutaran lagu`
 
 - `/resume - melanjutkan pemutaran lagu`
 
-- `/skip - putar lagu berikutnya`
+- `/s - putar lagu berikutnya`
 
 - `/end - hentikan pemutaran musik`
 
