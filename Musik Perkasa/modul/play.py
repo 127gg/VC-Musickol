@@ -169,7 +169,7 @@ def updated_stats(chat, queue, vol=100):
 
 
 def r_ply(type_):
-    if type_ == "play":
+    if type_ == "p":
         pass
     else:
         pass
@@ -283,7 +283,7 @@ async def m_cb(b, cb):
                 updated_stats(m_chat, qeue), reply_markup=r_ply("play")
             )
 
-    elif type_ == "play":
+    elif type_ == "p":
         if (chet_id not in callsmusic.pytgcalls.active_calls) or (
             callsmusic.pytgcalls.active_calls[chet_id] == "playing"
         ):
@@ -357,7 +357,7 @@ async def m_cb(b, cb):
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
-    elif type_ == "skip":
+    elif type_ == "s":
         if qeue:
             qeue.pop(0)
         if chet_id not in callsmusic.pytgcalls.active_calls:
@@ -392,7 +392,7 @@ async def m_cb(b, cb):
             await cb.answer("Obrolan tidak terhubung!", show_alert=True)
 
 
-@Client.on_message(command("play") & other_filters)
+@Client.on_message(command("p") & other_filters)
 async def play(_, message: Message):
     global que
     lel = await message.reply("🔄 **Sedang Memproses Lagu**")
@@ -643,7 +643,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "MightyMusic"
+        user.first_name = "musikkol"
     usar = user
     wew = usar.id
     try:
